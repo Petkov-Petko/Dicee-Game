@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicee game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 id="textWin">Refresh Me</h1>
+    </div>  
+    <div class="container">
+    <div class="players">
+        <h3>Player 1</h3>
+        <h3>Player 2</h3>
+    </div>
+
+    <div class="dices">
+        <img id="1" src="./images/dice6.png" alt="6">
+        <img id="2" src="./images/dice6.png" alt="6">
+    </div>
+
+    <div class="buttons">
+        <button class="1" id="bt1" onclick="random()">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text"> Click me
+            </span>
+          </button>
+          <button class="2" id="bt2" disabled onclick="random2()">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text"> Click me
+            </span>
+          </button>
+    </div>
+    </div>
+
+    <div class="refresh" onclick="refresh()">
+        <button class="button" type="button">
+            <svg viewBox="0 0 16 16" class="bi bi-arrow-repeat" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"></path>
+            <path d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" fill-rule="evenodd"></path>
+          </svg>
+              Refresh 
+          </button>   
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
